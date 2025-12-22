@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Repository>
+    <FileSystem class="org.apache.jackrabbit.core.fs.db.PostgreSQLFileSystem">
+        <param name="driver" value="org.postgresql.Driver"/>
+        <param name="url" value="jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}"/>
+        <param name="user" value="${DB_USER}"/>
+        <param name="password" value="${DB_PASSWORD}"/>
+        <param name="schemaObjectPrefix" value="fs_"/>
+    </FileSystem>
+    
+    <DataStore class="org.apache.jackrabbit.core.data.db.DbDataStore">
+        <param name="driver" value="org.postgresql.Driver"/>
+        <param name="url" value="jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}"/>
+        <param name="user" value="${DB_USER}"/>
+        <param name="password" value="${DB_PASSWORD}"/>
+        <param name="databaseType" value="postgresql"/>
+        <param name="minRecordLength" value="1024"/>
+    </DataStore>
+    
+    <Security appName="Magnolia">
+        <AccessManager class="info.magnolia.jcr.security.MagnoliaAccessManager"/>
+        <LoginModule class="info.magnolia.jcr.security.MagnoliaLoginModule">
+            <param name="anonymousId" value="anonymous"/>
+            <param name="adminId" value="superuser"/>
+        </LoginModule>
+    </Security>
+    
+    <Workspaces rootPath="${wsp.home}"/>
+    <Versioning rootPath="${wsp.home}/version"/>
+</Repository>

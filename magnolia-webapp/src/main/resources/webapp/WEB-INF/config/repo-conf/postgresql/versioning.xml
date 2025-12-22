@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Versioning>
+    <FileSystem class="org.apache.jackrabbit.core.fs.db.PostgreSQLFileSystem">
+        <param name="driver" value="org.postgresql.Driver"/>
+        <param name="url" value="jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}"/>
+        <param name="user" value="${DB_USER}"/>
+        <param name="password" value="${DB_PASSWORD}"/>
+        <param name="schemaObjectPrefix" value="version_"/>
+    </FileSystem>
+    
+    <PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.PostgreSQLPersistenceManager">
+        <param name="driver" value="org.postgresql.Driver"/>
+        <param name="url" value="jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}"/>
+        <param name="user" value="${DB_USER}"/>
+        <param name="password" value="${DB_PASSWORD}"/>
+        <param name="schemaObjectPrefix" value="version_"/>
+    </PersistenceManager>
+</Versioning>
+

@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: magnolia-postgres
+    environment:
+      POSTGRES_USER: magnolia
+      POSTGRES_PASSWORD: magnolia
+      POSTGRES_DB: magnolia
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U magnolia"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - magnolia-network
+    restart: unless-stopped
+    
+  magnolia:
+    build:
+      context: ./magnolia-webapp
+      dockerfile: Dockerfile
+    container_name: magnolia-instance
+    environment:
+      - MAGNOLIA_HOME=/usr/local/tomcat/magnolia
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=magnolia
+      - DB_USER=magnolia
+      - DB_PASSWORD=magnolia
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - magnolia_data:/usr/local/tomcat/magnolia
+    networks:
+      - magnolia-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/.magnolia/admincentral || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  magnolia_data:
+
+networks:
+  magnolia-network:
+    driver: bridge

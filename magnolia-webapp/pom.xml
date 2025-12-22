@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>magnolia-webapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+
+        <!-- Magnolia 6.3 -->
+        <magnolia.version>6.3.0</magnolia.version>
+        <magnolia.bundle.version>6.3.0</magnolia.bundle.version>
+
+        <!-- Blossom -->
+        <blossom.version>4.0.0</blossom.version>
+
+        <!-- Spring -->
+        <spring.version>5.3.32</spring.version>
+
+        <!-- PostgreSQL -->
+        <postgresql.version>42.5.4</postgresql.version>
+
+        <!-- Kotlin -->
+        <kotlin.version>1.9.0</kotlin.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>magnolia.public.releases</id>
+            <name>Magnolia Public Releases</name>
+            <url>https://nexus.magnolia-cms.com/repository/magnolia.public.releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Magnolia Core -->
+        <dependency>
+            <groupId>info.magnolia.cms</groupId>
+            <artifactId>magnolia-core</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+
+        <!-- Magnolia UI Framework -->
+        <dependency>
+            <groupId>info.magnolia.ui</groupId>
+            <artifactId>magnolia-ui-framework</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+
+        <!-- Magnolia Standard Templating Kit -->
+        <dependency>
+            <groupId>info.magnolia.templating</groupId>
+            <artifactId>magnolia-standard-templating-kit</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+
+        <!-- Blossom Module -->
+        <dependency>
+            <groupId>info.magnolia.blossom</groupId>
+            <artifactId>blossom-core</artifactId>
+            <version>${blossom.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.magnolia.blossom</groupId>
+            <artifactId>blossom-webapp</artifactId>
+            <version>${blossom.version}</version>
+        </dependency>
+
+        <!-- Spring Web MVC-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
+        <!-- Kotlin -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- FreeMarker -->
+        <dependency>
+            <groupId>info.magnolia.rendering</groupId>
+            <artifactId>magnolia-rendering-freemarker</artifactId>
+            <version>${magnolia.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <warName>ROOT</warName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
