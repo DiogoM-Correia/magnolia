@@ -1,0 +1,11 @@
+label: List Item
+form:
+  properties:
+    label:
+      label: Label
+      $type: textField
+      i18n: true
+    url:
+      label: URL
+      $type: textField
+      i18n: true

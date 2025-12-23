@@ -1,0 +1,10 @@
+title: Link List
+dialog: starter-lm:components/linkList
+templateScript: /starter-lm/templates/components/linkList/linkList.ftl
+renderType: freemarker
+areas:
+  items:
+    templateScript: /starter-lm/templates/components/linkList/items.ftl
+    availableComponents:
+      Item:
+        id: starter-lm:components/listItem/listItem

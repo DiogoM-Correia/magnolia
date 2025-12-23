@@ -1,0 +1,20 @@
+label: Image
+form:
+  properties:
+    image:
+      label: Image
+      $type: damLinkField
+    altText:
+      label: Alt Text
+      $type: textField
+      i18n: true
+    caption:
+      label: Caption
+      $type: textField
+      i18n: true
+    text:
+      label: Text
+      $type: richTextField
+      i18n: true
+      colors: 02373F
+      fontSizes: 'Small/0.75rem;Default/1rem;Big/1.5rem'

@@ -1,0 +1,28 @@
+templates:
+  availability:
+    enableAllWithRenderType:
+      freemarker: freemarker
+
+i18n:
+  enabled: true
+  class: info.magnolia.cms.i18n.IetfI18nContentSupport
+  fallbackLocale: en
+  locales:
+    en:
+      languageTag: en
+      enabled: true
+    de:
+      languageTag: de
+      enabled: true
+
+cors:
+  fallback:
+    uris:
+      rest:
+        patternString: /.rest/*
+    allowedOrigins:
+      all: '*'
+    allowedMethods:
+      all: '*'
+    allowedHeaders:
+      all: '*'
