@@ -1,4 +1,0 @@
-title: Text
-dialog: starter-lm:components/text
-templateScript: /starter-lm/templates/components/text/text.ftl
-renderType: freemarker

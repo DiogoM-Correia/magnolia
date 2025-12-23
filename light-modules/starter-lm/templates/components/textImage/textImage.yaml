@@ -1,4 +1,0 @@
-title: Text and Image
-dialog: starter-lm:components/textImage
-templateScript: /starter-lm/templates/components/textImage/textImage.ftl
-renderType: freemarker
