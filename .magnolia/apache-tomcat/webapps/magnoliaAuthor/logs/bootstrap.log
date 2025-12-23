@@ -1,0 +1,20 @@
+INFO  23.12.2025 14:41:11  Trying to initialize repositories from: \n    C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\bootstrap\author\n    C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\bootstrap\common
+INFO  23.12.2025 14:41:11  Repository [imaging] has been initialized.
+INFO  23.12.2025 14:41:11  Repository [magnolia-mgnlSystem] has been initialized.
+INFO  23.12.2025 14:41:11  Trying to import content from 1 files into repository [website]
+INFO  23.12.2025 14:41:11  Repository [website] has been initialized.
+INFO  23.12.2025 14:41:11  Repository [category] has been initialized.
+INFO  23.12.2025 14:41:11  Repository [users] has been initialized.
+INFO  23.12.2025 14:41:11  Repository [resources] has been initialized.
+INFO  23.12.2025 14:41:11  Repository [config] has been initialized.
+INFO  23.12.2025 14:41:11  Trying to import content from 1 files into repository [dam]
+INFO  23.12.2025 14:41:12  Repository [dam] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [userroles] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [scripts] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [messages] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [tasks] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [keystore] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [magnolia-mgnlVersion] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [default] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [profiles] has been initialized.
+INFO  23.12.2025 14:41:12  Repository [usergroups] has been initialized.

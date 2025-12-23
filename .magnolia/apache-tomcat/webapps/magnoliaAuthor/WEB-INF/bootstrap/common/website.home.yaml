@@ -1,0 +1,97 @@
+'home':
+  'jcr:primaryType': 'mgnl:page'
+  'jcr:uuid': '5edb21e0-5695-4dd8-84ba-bc9f9642fd92'
+  'mgnl:created': 2024-09-13T19:07:00.093+02:00
+  'mgnl:createdBy': 'superuser'
+  'mgnl:lastModified': 2024-10-11T20:30:52.602+02:00
+  'mgnl:lastModifiedBy': 'superuser'
+  'mgnl:template': 'starter-lm:pages/basic'
+  'title': 'Home'
+  'main':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '52489656-0fc0-4ec3-9480-bf6922670b9e'
+    'mgnl:lastModified': 2024-10-11T20:30:52.602+02:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '0':
+      'altText': 'Image'
+      'image': 'jcr:c8a73f86-8013-41de-8f09-f580f10e544b'
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '6f308d0b-84b6-4070-baf9-4038b8ea101d'
+      'mgnl:created': 2024-09-13T21:45:09.953+02:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-10-11T20:28:16.195+02:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'starter-lm:components/textImage/textImage'
+      'text': '<p><span style="background-color:rgb(255,255,255);color:#02373F;font-size:1.5rem;"><strong>We
+        help you turn complex content into incredible digital experiences</strong></span></p><p>&nbsp;</p><p><span
+        style="background-color:rgb(255,255,255);color:#02373F;font-size:1rem;">With
+        Magnolia you can unify your content, commerce, customer data and legacy tech
+        to build engaging and efficient experiences at scale.</span></p>'
+  'footer':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': 'd20b2905-7fcb-4ab1-8954-54065e333648'
+    'mgnl:created': 2024-09-13T20:59:37.783+02:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-09-13T21:01:18.287+02:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '00':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '79e4b6cd-f746-4116-b67a-2ac49287d1ec'
+      'mgnl:created': 2024-09-13T20:59:56.732+02:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2024-09-13T21:01:18.287+02:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'starter-lm:components/linkList/linkList'
+      'theme': 'dark'
+      'title': 'Get More Information'
+      'items':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '9c2e8446-cf1f-49f6-9ec4-179df329b055'
+        'mgnl:created': 2024-09-13T21:00:27.173+02:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastModified': 2024-09-13T21:01:18.287+02:00
+        'mgnl:lastModifiedBy': 'superuser'
+        '0':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': '2780d833-2516-41a5-9815-5ae9ccd5c3e1'
+          'label': 'Magnolia Documentation'
+          'mgnl:created': 2024-09-13T21:00:27.176+02:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-09-13T21:00:27.176+02:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'starter-lm:components/listItem/listItem'
+          'url': 'https://docs.magnolia-cms.com/home/'
+        '00':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': 'fbfb59c2-b5cb-4e6d-80ff-d438f45d7c94'
+          'label': 'Headless Documentation'
+          'mgnl:created': 2024-09-13T21:01:13.950+02:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-09-13T21:01:13.950+02:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'starter-lm:components/listItem/listItem'
+          'url': 'https://docs.magnolia-cms.com/product-docs/6.3/developing/headless/'
+        '01':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': 'b65d7363-c78e-4021-82fc-90e81e91e873'
+          'label': 'CLI Documentation'
+          'mgnl:created': 2024-09-13T21:01:45.675+02:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastModified': 2024-09-13T21:01:45.675+02:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'starter-lm:components/listItem/listItem'
+          'url': 'https://docs.magnolia-cms.com/magnolia-cli'
+  'about':
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': 'abc28b07-ecda-482c-a05a-5f798446f092'
+    'mgnl:created': 2024-09-13T22:43:00.057+02:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2024-10-11T19:43:32.079+02:00
+    'mgnl:lastModifiedBy': 'anonymous'
+    'mgnl:template': 'starter-lm:pages/basic'
+    'title': 'About'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '07645154-1670-4e93-b2e7-aeb243571563'
+      'mgnl:lastModified': 2024-10-11T19:43:32.079+02:00
+      'mgnl:lastModifiedBy': 'anonymous'

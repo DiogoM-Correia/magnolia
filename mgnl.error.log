@@ -1,0 +1,85 @@
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 info: The project will be created in the current working directory
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/freemarker-starter/-/archive/main/freemarker-starter-main.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/community-lm/-/archive/6.3-freemarker-only/community-lm-6.3-freemarker-only.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 info: Retrieving download URL from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 error: An error occurred while downloading bundle from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:32:00.857+00:00 error: No Magnolia bundle with version "6.3" is available
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 info: The project will be created in the current working directory
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/freemarker-starter/-/archive/main/freemarker-starter-main.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/community-lm/-/archive/6.3-freemarker-only/community-lm-6.3-freemarker-only.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 info: Retrieving download URL from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 error: An error occurred while downloading bundle from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:41.024+00:00 error: No Magnolia bundle with version "6.3.x" is available
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 info: The project will be created in the current working directory
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/freemarker-starter/-/archive/main/freemarker-starter-main.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/community-lm/-/archive/6.3-freemarker-only/community-lm-6.3-freemarker-only.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 info: Retrieving download URL from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 error: An error occurred while downloading bundle from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:34:53.223+00:00 error: No Magnolia bundle with version "6.3.X" is available
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: The project will be created in the current working directory
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/freemarker-starter/-/archive/main/freemarker-starter-main.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/community-lm/-/archive/6.3-freemarker-only/community-lm-6.3-freemarker-only.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Retrieving download URL from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.tomcat.barebone&maven.artifactId=magnolia-tomcat-barebone&maven.extension=zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Starting download from: https://nexus.magnolia-cms.com/repository/public/info/magnolia/tomcat/barebone/magnolia-tomcat-barebone/1.2.43/magnolia-tomcat-barebone-1.2.43.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Retrieving download URL from: https://nexus.magnolia-cms.com/service/rest/v1/search/assets?sort=version&repository=public&maven.groupId=info.magnolia.bundle&maven.artifactId=magnolia-community-webapp&maven.extension=war
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Starting download from: https://nexus.magnolia-cms.com/repository/public/info/magnolia/bundle/magnolia-community-webapp/6.3.1/magnolia-community-webapp-6.3.1.war
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Created "microprofile-config.properties" at: C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\microprofile-config.properties
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Starting download from: https://gitlab.magnolia-platform.com/demos/demo-content/-/archive/ce-freemarker/demo-content-ce-freemarker.zip
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: [32m[1m✅ Found existing "light-modules" directory at: "C:\Users\dcorreia\Desktop\magnolia\light-modules"[22m[39m
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Set "magnolia.resources.dir" to: "${magnolia.home}/../../../../light-modules" in "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\magnolia.properties"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Set "magnolia.update.auto" to: "true" in "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\magnolia.properties"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Set "magnolia.develop" to: "true" in "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\magnolia.properties"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Set "magnolia.graphql.introspection.enabled" to: "true" in "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\magnolia.properties"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Set "magnolia.personalization.rest.allowVariants" to: "true" in "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaAuthor\WEB-INF\config\default\magnolia.properties"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 warn: File "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\magnoliaPublic\WEB-INF\config\default\magnolia.properties" not found; skipping configuration
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 warn: File "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat\webapps\ROOT\WEB-INF\config\default\magnolia.properties" not found; skipping configuration
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Added "mgnl" script to package.json
+[@magnolia/cli@5.3.0] 2025-12-23T14:36:30.534+00:00 info: We collect anonymised data to improve your experience.
+Data include the names and versions of used commands, Magnolia CLI version, Node.js version and OS information.
+We use this data to prioritize further development of the tool.
+All collected data are collected anonymously and not tied to any individual.
+No personal information is collected.
+[AddPlugin@5.3.0] 2025-12-23T14:36:32.035+00:00 info: Installing @magnolia/cli-start-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:32.035+00:00 info: Package @magnolia/cli-start-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:32.035+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:32.035+00:00 info: Added new plugin: "StartPlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:32.035+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:36:36.600+00:00 info: Installing @magnolia/cli-create-light-module-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:36.600+00:00 info: Package @magnolia/cli-create-light-module-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:36.600+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:36.600+00:00 info: Added new plugin: "CreateLightModulePlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:36.600+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:36:40.439+00:00 info: Installing @magnolia/cli-create-app-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:40.439+00:00 info: Package @magnolia/cli-create-app-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:40.439+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:40.439+00:00 info: Added new plugin: "CreateAppPlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:40.439+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:36:44.923+00:00 info: Installing @magnolia/cli-create-content-type-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:44.923+00:00 info: Package @magnolia/cli-create-content-type-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:44.923+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:44.923+00:00 info: Added new plugin: "CreateContentTypePlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:44.923+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:36:48.314+00:00 info: Installing @magnolia/cli-create-virtual-uri-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:48.314+00:00 info: Package @magnolia/cli-create-virtual-uri-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:48.314+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:48.314+00:00 info: Added new plugin: "CreateVirtualUriPlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:48.314+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:36:51.811+00:00 info: Installing @magnolia/cli-create-component-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:36:51.811+00:00 info: Package @magnolia/cli-create-component-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:36:51.811+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:36:51.811+00:00 info: Added new plugin: "CreateComponentPlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:36:51.811+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[AddPlugin@5.3.0] 2025-12-23T14:37:04.275+00:00 info: Installing @magnolia/cli-create-page-plugin...
+[AddPlugin@5.3.0] 2025-12-23T14:37:04.275+00:00 info: Package @magnolia/cli-create-page-plugin is installed.
+[AddPlugin@5.3.0] 2025-12-23T14:37:04.275+00:00 info: Modifying mgnl.config.js...
+[AddPlugin@5.3.0] 2025-12-23T14:37:04.275+00:00 info: Added new plugin: "CreatePagePlugin" to mgnl.config.js.
+[AddPlugin@5.3.0] 2025-12-23T14:37:04.275+00:00 info: Run `npm run mgnl` to see the list of registered commands.
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Project successfully downloaded
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Run "npm run mgnl" to see the list of registered commands
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: Start the project using: "npm run mgnl -- start"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: If the "StartPlugin" is not available, install it using: "npm run mgnl -- add-plugin @magnolia/cli-start-plugin"
+[JumpstartPlugin@1.1.5] 2025-12-23T14:35:12.280+00:00 info: For additional plugins and features, refer to the Magnolia CLI documentation: https://docs.magnolia-cms.com/magnolia-cli
+[StartPlugin@1.0.4] 2025-12-23T14:39:30.960+00:00 info: Using light modules path "C:\Users\dcorreia\Desktop\magnolia\light-modules" set by global argument in mgnl.config.js
+[StartPlugin@1.0.4] 2025-12-23T14:39:30.960+00:00 info: Using tomcat path "C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat" set by plugin argument in mgnl.config.js
+[StartPlugin@1.0.4] 2025-12-23T14:39:30.960+00:00 info: Starting Magnolia located at: C:\Users\dcorreia\Desktop\magnolia\.magnolia\apache-tomcat
+[StartPlugin@1.0.4] 2025-12-23T14:39:30.960+00:00 info: Press CTRL+C to terminate the process
