@@ -21,12 +21,6 @@
         [#if navRoot?has_content || navItems?has_content]
             <nav>
                 <ul class='flex space-x-6'>
-                    [#if navRoot?has_content]
-                        <li>
-                            <a href="${rootLink!}" class="navbar-item">${getPageTitle(navRoot)}</a>
-                        </li>
-                    [/#if]
-
                     [#if navItems?has_content]
                         [#list navItems as navItem]
                             <li>
