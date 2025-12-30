@@ -1,0 +1,4 @@
+title: Debug Info Component
+dialog: starter-lm:components/debugInfo
+templateScript: /starter-lm/components/debugInfo/debugInfo.ftl
+renderType: freemarker

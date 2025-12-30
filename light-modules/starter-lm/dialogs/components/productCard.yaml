@@ -1,0 +1,49 @@
+label: Product Card
+form: 
+  tabs:
+    - name: tabMain
+      label: Main information
+      properties:
+        productName:
+          label: Product Name
+          $type: textField
+          i18n: true
+          required: true
+        productDescription:
+          label: Description 
+          $type: richTextField
+          i18n: true
+        productPrice:
+          label: Price
+          $type: textField
+          i18n: false
+          validators:
+            - name: regex
+              regex: ^\d+(\.\d{2})?$
+              errorMessage: Please enter a valid price (e.g. 10.99)
+        productImage:
+          label: Product Image
+          $type: damLinkField
+        productLink:
+          label: Product Link
+          $type: linkField
+    - name: tabAdvanced
+      label: Advanced 
+      properties:
+        featured:
+          label: Featured Product
+          $type: checkboxField
+          defaultValue: false
+        category:
+          label: Category
+          $type: selectField
+          options:
+            - name: electronics
+              label: Electronics
+            - name: clothing
+              label: Clothing
+            - name: books
+              label: Books
+        tags:
+          label: Tags
+          $type: textField

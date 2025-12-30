@@ -1,0 +1,18 @@
+label: Test Section
+form:
+  properties:
+    headline:
+      label: Headline
+      $type: textField
+      i18n: true
+    subheadline:
+      label: Subheadline
+      $type: textField
+      i18n: true
+    ctaText:
+      label: CTA Button Text
+      $type: textField
+      i18n: true
+    ctaLink:
+      label: CTA Link
+      $type: linkField

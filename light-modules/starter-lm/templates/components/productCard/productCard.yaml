@@ -1,0 +1,4 @@
+title: Product Card
+dialog: starter-lm:components/productCard
+templateScript: /starter-lm/templates/components/productCard/productCard.ftl
+renderType: freemarker

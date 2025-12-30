@@ -18,6 +18,10 @@ areas:
         id: starter-lm:components/textImage/textImage
       LinkList:
         id: starter-lm:components/linkList/linkList
+      Test:
+        id: starter-lm:components/test/test
+      ProductCard:
+        id: starter-lm:components/productCard/productCard
     autoGeneration:
       content:
         text:
@@ -35,6 +39,10 @@ areas:
         id: starter-lm:components/text/text
       LinkList:
         id: starter-lm:components/linkList/linkList
+      Test:
+        id: starter-lm:components/test/test    
+      ProductCard:
+        id: starter-lm:components/productCard/productCard
     inheritance:
       enabled: true
       components: all

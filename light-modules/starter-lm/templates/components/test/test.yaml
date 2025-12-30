@@ -1,0 +1,5 @@
+title: Test
+dialog: starter-lm:components/test
+templateScript: /starter-lm/templates/components/test/test.ftl
+renderType: freemarker
+modelClass: info.magnolia.starter-lm.components.TestModel
