@@ -17,42 +17,27 @@
         [#-- Use Java Model to get related page --]
         [#if model?has_content]
             
-            [#attempt]
-                [#assign relatedPage = model.getRelatedPage()!]
-                [#if relatedPage?has_content]
-                    <div class="mt-6 p-4 bg-gray-100 rounded-lg border">
-                        <h3 class="text-lg font-semibold mb-2"><strong>Related Page:</strong></h3>
-                        [#assign relatedPageNode = cmsfn.asJCRNode(relatedPage)!]
-                        [#if relatedPageNode?has_content]
-                            [#assign pageLink = cmsfn.link(relatedPageNode)!]
-                            [#assign pageTitle = relatedPage.title!relatedPage.name!relatedPageNode.name]
-                                                        
-                            [#if pageLink?has_content]
-                                <a href="${pageLink}" class="text-dark-teal hover:underline font-semibold text-lg">
-                                    ${pageTitle} →
-                                </a>
-                            [#else]
-                                <p class="text-gray-600">
-                                    <strong>${pageTitle}</strong> (link could not be generated)
-                                </p>
-                            [/#if]
+            [#assign relatedPage = model.getRelatedPage()!]
+            [#if relatedPage?has_content]
+                <div class="mt-6 p-4 bg-gray-100 rounded-lg border">
+                    <h3 class="text-lg font-semibold mb-2"><strong>Related Page:</strong></h3>
+                    [#assign relatedPageNode = cmsfn.asJCRNode(relatedPage)!]
+                    [#if relatedPageNode?has_content]
+                        [#assign pageLink = cmsfn.link(relatedPageNode)!]
+                        [#assign pageTitle = relatedPage.title!relatedPage.name!relatedPageNode.name]
+                                                    
+                        [#if pageLink?has_content]
+                            <a href="${pageLink}" class="text-dark-teal hover:underline font-semibold text-lg">
+                                ${pageTitle} →
+                            </a>
+                        [#else]
+                            <p class="text-gray-600">
+                                <strong>${pageTitle}</strong> (link could not be generated)
+                            </p>
                         [/#if]
-                    </div>
-                [#else]
-                    <div class="mt-4 p-2 bg-yellow-100 text-xs">
-                        <strong>Debug:</strong> getRelatedPage() returned null. Path: "${content.relatedPagePath!}"
-                        <br>Make sure the path exists and starts with <code>/</code> (e.g., <code>/home/about</code>)
-                    </div>
-                [/#if]
-            [#recover]
-                <div class="mt-4 p-2 bg-red-100 text-xs">
-                    <strong>Error:</strong> ${.error!}
+                    [/#if]
                 </div>
-            [/#attempt]
-        [#else]
-            <div class="mt-4 p-2 bg-yellow-100 text-xs">
-                <strong>Debug:</strong> Model is not available
-            </div>
+            [/#if]
         [/#if]
     </div>
 [/@editMode.wrapContent]
