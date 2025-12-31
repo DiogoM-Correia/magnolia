@@ -21,7 +21,7 @@
             [#assign relatedPage = model.getRelatedPage()!]
             [#if relatedPage?has_content]
                 <div class="mt-6 p-4 bg-gray-100 rounded-lg border">
-                    <h3 class="text-lg font-semibold mb-2"><strong>Related Page:</strong></h3>
+                    <h3 class="text-lg font-semibold mb-2"><strong>${i18n['test.relatedPage']}</strong></h3>
                     [#assign relatedPageNode = cmsfn.asJCRNode(relatedPage)!]
                     [#if relatedPageNode?has_content]
                         [#assign pageLink = cmsfn.link(relatedPageNode)!]
@@ -33,7 +33,7 @@
                             </a>
                         [#else]
                             <p class="text-gray-600">
-                                <strong>${pageTitle}</strong> (link could not be generated)
+                                <strong>${pageTitle}</strong> ${i18n['test.linkNotGenerated']}
                             </p>
                         [/#if]
                     [/#if]

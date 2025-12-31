@@ -35,7 +35,7 @@
 
         [#if content.featured == "true"]
             <span class="inline-block bg-yellow-400 text-black px-2 py-1 rounded text-sm font-semibold">
-                Featured
+                ${i18n['product.featured']}
             </span>
         [/#if]
 

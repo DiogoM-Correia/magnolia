@@ -11,10 +11,9 @@ i18n:
     en:
       languageTag: en
       enabled: true
-    de:
-      languageTag: de
+    pt:
+      languageTag: pt
       enabled: true
-
 cors:
   fallback:
     uris:
