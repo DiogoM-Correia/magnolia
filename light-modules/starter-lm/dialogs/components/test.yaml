@@ -16,3 +16,8 @@ form:
     ctaLink:
       label: CTA Link
       $type: linkField
+    relatedPagePath:
+      label: Related Page Path
+      $type: textField
+      i18n: false
+      description: The path to the related page

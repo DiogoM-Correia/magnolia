@@ -1,40 +1,58 @@
 [#import "/starter-lm/includes/macros/editMode.ftl" as editMode]
 
 [@editMode.wrapContent]
-    [#-- Access the model (automatically available as 'model') --]
-    [#assign testModel = model!]
-    [#assign contentMap = testModel.getContent()!]
-    [#assign renderingContext = testModel.getRenderingContext()!]
-    
     <div class="test-section py-12 px-8">
-        [#-- Access ContentMap --]
         [#if content.headline?has_content]
             <h1 class="text-4xl font-bold mb-4">${content.headline}</h1>
         [/#if]
-
-        [#-- Access JCR Node directly --]
-        [#assign jcrNode = testModel.getJcrNode()!]
-        [#if jcrNode?has_content]
-            <div class="debug-info" style="display:none;">
-                Node Name: ${jcrNode.name!}
-                Node Path: ${jcrNode.path!}
-            </div>
+        
+        [#if content.subheadline?has_content]
+            <p class="text-xl mb-6">${content.subheadline}</p>
+        [/#if]
+        
+        [#if content.ctaText?has_content && content.ctaLink?has_content]
+            <a href="${content.ctaLink}" class="btn-primary">${content.ctaText}</a>
         [/#if]
 
-        [#-- Access JCR Session --]
-        [#attempt]
-            [#assign websiteSession = testModel.getJcrSession("website")!]
-            [#if websiteSession?has_content]
-                [#-- Example: Check if a node exists --]
-                [#assign homeExists = websiteSession.nodeExists("/home")!]
-            [/#if]
-        [#recover]
-            [#-- Handle error silently --]
-        [/#attempt]
-
-        [#-- Use business logic from model --]
-        [#if testModel.hasProperty("headline")]
-            <p class="text-sm text-gray-500">Headline property exists</p>
+        [#-- Use Java Model to get related page --]
+        [#if model?has_content]
+            
+            [#attempt]
+                [#assign relatedPage = model.getRelatedPage()!]
+                [#if relatedPage?has_content]
+                    <div class="mt-6 p-4 bg-gray-100 rounded-lg border">
+                        <h3 class="text-lg font-semibold mb-2"><strong>Related Page:</strong></h3>
+                        [#assign relatedPageNode = cmsfn.asJCRNode(relatedPage)!]
+                        [#if relatedPageNode?has_content]
+                            [#assign pageLink = cmsfn.link(relatedPageNode)!]
+                            [#assign pageTitle = relatedPage.title!relatedPage.name!relatedPageNode.name]
+                                                        
+                            [#if pageLink?has_content]
+                                <a href="${pageLink}" class="text-dark-teal hover:underline font-semibold text-lg">
+                                    ${pageTitle} →
+                                </a>
+                            [#else]
+                                <p class="text-gray-600">
+                                    <strong>${pageTitle}</strong> (link could not be generated)
+                                </p>
+                            [/#if]
+                        [/#if]
+                    </div>
+                [#else]
+                    <div class="mt-4 p-2 bg-yellow-100 text-xs">
+                        <strong>Debug:</strong> getRelatedPage() returned null. Path: "${content.relatedPagePath!}"
+                        <br>Make sure the path exists and starts with <code>/</code> (e.g., <code>/home/about</code>)
+                    </div>
+                [/#if]
+            [#recover]
+                <div class="mt-4 p-2 bg-red-100 text-xs">
+                    <strong>Error:</strong> ${.error!}
+                </div>
+            [/#attempt]
+        [#else]
+            <div class="mt-4 p-2 bg-yellow-100 text-xs">
+                <strong>Debug:</strong> Model is not available
+            </div>
         [/#if]
     </div>
 [/@editMode.wrapContent]
