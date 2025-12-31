@@ -6,13 +6,17 @@ import info.magnolia.rendering.template.RenderableDefinition;
 import info.magnolia.rendering.context.RenderingContext;
 import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.repository.RepositoryManager;
+import info.magnolia.starterlm.services.TextService;
 
+import javax.inject.Inject;
 import javax.jcr.Node;
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 public class TestModel<RD extends RenderableDefinition> extends RenderingModelImpl<RD> {
     private ContentMap content;
+
+    @Inject
+    private TextService textService;
 
     public TestModel(Node content, RD definition) {
         super(content, definition, null);
@@ -43,5 +47,16 @@ public class TestModel<RD extends RenderableDefinition> extends RenderingModelIm
         } catch (Exception e) {
             return null;
         }
+    }
+
+    public String decorateField(String fieldName) {
+        if (textService == null) {
+            throw new IllegalStateException("TextService is not injected. Make sure the service is registered in config/beans/textService.yaml");
+        }
+        String fieldValue = (String) content.get(fieldName);
+        if (fieldValue == null || fieldValue.isEmpty()) {
+            return null;
+        }
+        return textService.decorateText(fieldValue);
     }
 }

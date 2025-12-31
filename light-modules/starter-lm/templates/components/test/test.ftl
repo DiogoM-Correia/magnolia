@@ -6,8 +6,9 @@
             <h1 class="text-4xl font-bold mb-4">${content.headline}</h1>
         [/#if]
         
-        [#if content.subheadline?has_content]
-            <p class="text-xl mb-6">${content.subheadline}</p>
+        [#if model?has_content && content.subheadline?has_content]
+            [#assign decoratedSubheadline = model.decorateField("subheadline")!]
+            <p class="text-xl mb-6">${decoratedSubheadline}</p>
         [/#if]
         
         [#if content.ctaText?has_content && content.ctaLink?has_content]
