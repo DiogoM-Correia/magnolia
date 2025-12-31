@@ -23,7 +23,7 @@
 
         [#if content.productDescription?has_content]
             <div class="mb-4 text-gray-700">
-                ${cmsfn.decode(content).productDescription}
+                ${cmsfn.decode(content.productDescription)}
             </div>
         [/#if]
 

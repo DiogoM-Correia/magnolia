@@ -1,49 +1,54 @@
 label: Product Card
-form: 
-  tabs:
-    - name: tabMain
-      label: Main information
-      properties:
-        productName:
-          label: Product Name
-          $type: textField
-          i18n: true
-          required: true
-        productDescription:
-          label: Description 
-          $type: richTextField
-          i18n: true
-        productPrice:
-          label: Price
-          $type: textField
-          i18n: false
-          validators:
-            - name: regex
-              regex: ^\d+(\.\d{2})?$
-              errorMessage: Please enter a valid price (e.g. 10.99)
-        productImage:
-          label: Product Image
-          $type: damLinkField
-        productLink:
-          label: Product Link
-          $type: linkField
-    - name: tabAdvanced
-      label: Advanced 
-      properties:
-        featured:
-          label: Featured Product
-          $type: checkboxField
-          defaultValue: false
-        category:
-          label: Category
-          $type: selectField
-          options:
-            - name: electronics
-              label: Electronics
-            - name: clothing
-              label: Clothing
-            - name: books
-              label: Books
-        tags:
-          label: Tags
-          $type: textField
+form:
+  properties:
+    productName:
+      label: Product Name
+      $type: textField
+      i18n: true
+      required: true
+    productDescription:
+      label: Description
+      $type: richTextField
+      i18n: true
+    productPrice:
+      label: Price
+      $type: textField
+      i18n: false
+      required: true
+    productImage:
+      label: Product Image
+      $type: damLinkField
+    productLink:
+      label: Product Link
+      $type: linkField   
+    featured:
+      label: Featured Product
+      $type: radioButtonGroupField
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: true
+            value: "true"
+            label: Yes
+          - name: false
+            value: "false"
+            label: No
+      defaultValue: "false"
+    category:
+      label: Category
+      $type: radioButtonGroupField
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: electronics
+            value: electronics
+            label: Electronics
+          - name: clothing
+            value: clothing
+            label: Clothing
+          - name: books
+            value: books
+            label: Books
+    tags:
+      label: Tags
+      $type: textField
