@@ -1,0 +1,4 @@
+class: info.magnolia.rest.registry.EndpointDefinition
+workspace: websitebasePath: /my-api
+implementationClass: info.magnolia.starterlm.controllers.ApiController
+bypassWorkspaceAcls: true
