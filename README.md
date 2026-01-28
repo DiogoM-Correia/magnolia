@@ -14,14 +14,15 @@ A Magnolia CMS project with the **starter-lm** light module (Freemarker template
    npm run mgnl jumpstart
    ```
 
-2. **Start Magnolia**:
+2. Mvn install
+   ```bash
+   mvn clean install
+   ```
+
+3. **Start Magnolia**:
    ```bash
    npm run mgnl start
    ```
 
-3. Open **http://localhost:8080/magnoliaAuthor** in your browser.
+4. Open **http://localhost:8080/magnoliaAuthor** in your browser.
 
-## Optional
-
-- **Build Java** (light module): `mvn compile`
-- **Build frontend** (Tailwind in starter-lm): `cd light-modules/starter-lm && npm run build`
