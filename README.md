@@ -24,5 +24,5 @@ A Magnolia CMS project with the **starter-lm** light module (Freemarker template
    npm run mgnl start
    ```
 
-4. Open **http://localhost:8080/magnoliaAuthor** in your browser.
+4. Open **http://localhost:8080/magnoliaAuthor** in browser.
 
